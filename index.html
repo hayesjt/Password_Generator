@@ -3,37 +3,72 @@
 
 <head>
 
-<title>Password Generator</title>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 <!--Nav Bar START-->
-<div class="navcss">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="navbarcontent">
-            <a class="navbar-brand"> <span class="toptitle">Password Generator</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
-</div>
+<nav class="navbar navbar-dark bg-dark">
+    <span class="toptext navbar-brand mb-0 h1">Password Generator</span>
+  </nav>
 <!--Nav Bar END-->
 
 <!--Content START-->
+<div class=container>
+    <div class=row>
+        <div class=col-md-2>
+
+        </div>
+            <div class=col-md-8>
+             <h1>Create Your Password</h1>
+                <p class=characterquestion>What type of characters do you want in your new password?</p>
+                <div class=userinputs>
+                    <input type="checkbox" name="upper" value="upper"> Upper Case Characters<br>
+                    <input type="checkbox" name="lower" value="lower"> Lower Case Characters<br>
+                    <input type="checkbox" name="special" value="special"> Special Characters<br>
+                    <input type="checkbox" name="number" value="number"> Numerical Characters<br>
+                </div>
+                <br/>
+                <p lengthquestion>How long did you want your password?</p>
+                <div class="slider">
+                    <input type="range" min="8" max="128" value="60" class="sliderbar" id="myRange">
+                </div>
+                <div class="textbox">
+                        <textarea id="Message" name="subject" placeholder="Your Secure Password"></textarea>
+                </div>
+                <div class="buttons">
+                    <div class="generator">
+                            <button type="button" class="btn btn-dark">Generate</button>
+                    </div>
+                    <div class="copy">
+                            <button type="button" class="btn btn-dark">Copy to Clipboard</button>
+                    </div>
+                </div>
+            </div>
+        <div class=col-md-2>
+
+        </div>
+    </div>
+
+</div>
 <!--Content END-->
 
 <!--Footer START-->
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <a class="bottomtext navbar-brand" href="#">&copy;Hay.Design.Lee</a>
+  </nav>
 <!--Footer END-->
 
 <!--JS links found on bootstrap website-->
 
 <!--JS link - Personal File -->
+    <script src="script.js"></script>
+
 
 </body>
 
