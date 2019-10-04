@@ -12,6 +12,8 @@
 
 <body>
 
+<!-- NO NAV BAR-->
+
 <!--Content START-->
     <div class="container">
         <div class=row>
@@ -22,22 +24,23 @@
                 <h2>Create Your Password</h2>
                     <p class=characterquestion>What type of characters do you want in your new password?</p>
                     <div class=userinputs>
-                        <input type="checkbox" name="upper" value="upper"> Upper Case Characters<br>
-                        <input type="checkbox" name="lower" value="lower"> Lower Case Characters<br>
-                        <input type="checkbox" name="special" value="special">Special Characters<br>
-                        <input type="checkbox" name="number" value="number"> Numerical Characters<br>
+                        <input type="checkbox" id = "upper"name="upper" value="upper"> Upper Case Characters<br>
+                        <input type="checkbox" id = "lower" name="lower" value="lower"> Lower Case Characters<br>
+                        <input type="checkbox" id = "special" name="special" value="special">Special Characters<br>
+                        <input type="checkbox" id = "number" name="number" value="number"> Numerical Characters<br>
                     </div>
                     <br/>
                     <p lengthquestion>How long did you want your password?</p>
-                    <div class="slider">
-                        <input type="range" min="8" max="128" value="60" class="sliderbar" id="myRange">
-                    </div>
-                    <div class="textbox">
-                            <textarea id="Message" name="subject" placeholder="Your Secure Password"></textarea>
+                    <div class="slidetext">
+                        <input id="sliderbar" type="range" min="8" max="128" value="60">
+                        <textarea id="display" placeholder="Your Secure Password"></textarea>
+                        <div id=length>
+                            
+                        </div>
                     </div>
                     <div id="buttons">
-                                <button type="button" id="generator" class="btn btn-dark">Generate</button>
-                                <button type="button" id="copy" class="btn btn-dark">Copy to Clipboard</button>
+                        <button type="button" id="generator" class="btn btn-dark">Generate</button>
+                        <button type="button" id="copy" class="btn btn-dark">Copy to Clipboard</button>
                     </div>
                 </div>
             <div class=col-md-2>
@@ -46,8 +49,11 @@
     </div>
 <!--Content END-->
 
+<!-- NO FOOTER CONTENT-->
+
 <!--JS link - Personal File -->
 <script src="script.js"></script>
+<!--JS link - Personal File -->
 
 </body>
 

@@ -25,24 +25,22 @@ h2 {
 }
 
 /* slider content - had help from various sources*/
-.slider {
-    width: 100%;
-    margin-bottom: 20px;
-}
 
-.sliderbar {
+#sliderbar {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 100%;
     height: 10px; 
     background: rgb(52,58,64); 
-    outline: none; 
+    outline: none;
+    margin-bottom: 20px;
+}
+
+#length {
+    display: inline-block;
 }
 
 /* text box and button content*/
-.textbox {
-    max-width: 500px;
-}
 
 #generate {
     display:inline-block;
