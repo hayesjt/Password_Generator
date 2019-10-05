@@ -1,15 +1,15 @@
 
 //Defining values to check boxes//
-var upper ="abcdefghijklmnopqrstuvwxyz"
-var lower ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var upper ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var lower ="abcdefghijklmnopqrstuvwxyz"
 var special ="!@#$%^&*_"
 var number = "123456789"
 
 //Functions and statments//
 
 //Genorate Button - generates random password//
-function generate(num1,num2,num3,num4){
-console.log(num1,num2,num3,num4);
+function generate(){
+    //console.log(num1,num2,num3,num4);
     //no default functions//
     event.preventDefault();
 
@@ -57,21 +57,62 @@ function copyPassword(){
 }
 
 //call the generate function//
-    document.getElementById("generator").addEventListener("click",function(){
+        document.getElementById("generator").addEventListener("click",function(){
         var upperInput = document.getElementById("upper").checked;
         var lowerInput = document.getElementById("lower").checked;
         var specialInput = document.getElementById("special").checked;
         var numberInput = document.getElementById("number").checked;
+        var possibleSelections = "";
         //console.log(firstinput);
 
-        switch (a){
+        switch (possibleSelections){
             case upperInput,lowerInput,specialInput,numberInput:
                 generate(upper,lower,special,number);
-                break
-            case upperInput,lowerInput
+                break;
+            case upperInput,lowerInput,specialInput:
+                generate(upper,lower,special);
+                break;
+            case upperInput,specialInput,numberInput:
+                generate(upper,special,number);
+                break;
+            case upperInput,lowerInput,numberInput:
+                generate(upper,lower,number);
+                break;
+            case lowerInput,specialInput,numberInput:
+                generate (lower,special,number);
+                break;
+            case upperInput,lowerInput:
+                generate(upper,lower);
+                break;
+            case upperInput,specialInput:
+                generate(upper,special);
+                break;
+            case upperInput,numberInput:
+                generate(upper,number);
+                break;
+            case upperInput,numberInput:
+                generate(upper,number);
+                break;
+            case lowerInput,specialInput:
+                generate(lower,special);
+                break;
+            case lowerInput,numberInput:
+                generate(lower,number);
+                break;
+            case specialInput,numberInput:
+                generate(special,number);
+                break;
+            case upperInput:
+                generate(upper);
+                break;
+            case lowerInput:
+                generate(lower);
+                break;
+            case specialInput:
+                generate(special);
+                break;
+            case numberInput:
+                generate(number);
+                break;
         }
-        //else (upperInput){
-
-        //}
-       // generate();
     })
