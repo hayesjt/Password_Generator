@@ -9,7 +9,7 @@ They can select the following:
 -upper case letters
 -symbols
 -numbers
--length between 8-128
+-length between 8-128 (choosen by slider)
 
 Based on the users prefrences it will spit out a password with the criteria choosen.
 The user can then copy this password using the "copy to clipboard" button. 
