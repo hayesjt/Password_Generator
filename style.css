@@ -13,6 +13,7 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: .5rem;
+    border: 2px dashed darkgrey;
 }
 
 h2 {
@@ -42,6 +43,12 @@ h2 {
 
 /* text box and button content*/
 
+#display {
+    width: 100%;
+    height: 80px;
+    border: 2px dashed darkgrey;
+    margin-top: 5px;
+}
 #generate {
     display:inline-block;
 }
