@@ -13,3 +13,5 @@ They can select the following:
 
 Based on the users prefrences it will spit out a password with the criteria choosen.
 The user can then copy this password using the "copy to clipboard" button. 
+
+URL: https://haylee430.github.io/Password_Generator/
