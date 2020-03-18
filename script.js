@@ -1,4 +1,3 @@
-
 //Defining values to check boxes//
 var upper ="ACDEFGHIJKLMNOPQRSTUVWXYZ"
 var lower ="abcdefghijklmnopqrstuvwxyz"
@@ -17,7 +16,7 @@ function generate(){
     //set password length with slider//
     let lengthOfPassword = document.getElementById("sliderbar").value;
 
-    //user picks characters//
+    //If statments to add values together and create a string of all characters we//
     let password = "";
 
     if (upperInput){
@@ -62,13 +61,13 @@ document.getElementById("sliderbar").oninput = function(){
             generate()
     })
 
-//COPY TO CLIPBOARD SECTION - help from W3schools.com//
+//COPY TO CLIPBOARD SECTION//
 function copyClip () {
     var copyText = document.getElementById("display");
     copyText.select();
     copyText.setSelectionRange(0, 99999); /*For mobile devices*/
     document.execCommand("copy");
-    alert("Copied: " + copyText.value);
+    alert("Your new password " + copyText.value + " has been copied!");
   }
 
 //CALL THE COPY FUNCTION - ONCLICK//
