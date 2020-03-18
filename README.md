@@ -23,3 +23,10 @@ to come back to this and create better functions that would guarantee at least o
 from each checkbox. Right now it just randomly selects from a large string and it may never
 can a character found in that check mark.
 
+Other key components I would like to include:
+    - saving of passwords
+    - More styling - possibly bring into simple react layout
+    - more secure
+    - log in/log out/sign up features to create a password vault
+
+If you have any suggestions please let me know at hay.design.lee@gmail.com.
