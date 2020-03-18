@@ -1,4 +1,4 @@
-# Password_Generator
+# Password Generator
 ---
 This password generator allows the user to pick the components they are looking for.
 
