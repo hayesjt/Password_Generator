@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="UTF-8">
     <title>Password Generator</title>
+    <!-- Linking Bootstrap for style purposes -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Linking personal style -- overides bootstrap -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<!-- NO NAV BAR-->
-
-<!--Content START-->
     <div class="container">
         <div class=row>
-            <div class=col-md-2>
-
-            </div>
-                <div class=col-md-8>
+            <!-- empty space to create 'white' space on sides -->
+            <div class=col-md-2> </div>
+            <!-- Main content -- entire function of site -->
+            <div class=col-md-8>
                 <h2>Create Your Password</h2>
-                    <p class=characterquestion>What type of characters do you want in your new password?</p>
-                    <div class=userinputs>
-                        <input type="checkbox" id = "upper"name="upper" value="upper"> Upper Case Characters<br>
-                        <input type="checkbox" id = "lower" name="lower" value="lower"> Lower Case Characters<br>
-                        <input type="checkbox" id = "special" name="special" value="special">Special Characters<br>
-                        <input type="checkbox" id = "number" name="number" value="number"> Numerical Characters<br>
-                    </div>
-                    <br/>
-                    <p lengthquestion>How long did you want your password?</p>
-                    <div class="slidetext">
-                        <input id="sliderbar" type="range" min="8" max="128" value="68">
-                        <div id=length>
-                            
-                        </div>
-                        <br/>
-                        <textarea id="display" placeholder="Your Secure Password"></textarea>
-                    </div>
-                    <div id="buttons">
-                        <button type="button" id="generator" class="btn btn-dark">Generate</button>
-                        <button type="button" id="copy" class="btn btn-dark">Copy to Clipboard</button>
-                    </div>
+                <p class=characterquestion>What type of characters do you want in your new password?</p>
+                <div class=userinputs>
+                    <input type="checkbox" id="upper" name="upper" value="upper"> Upper Case Characters<br>
+                    <input type="checkbox" id="lower" name="lower" value="lower"> Lower Case Characters<br>
+                    <input type="checkbox" id="special" name="special" value="special">Special Characters<br>
+                    <input type="checkbox" id="number" name="number" value="number"> Numerical Characters<br>
                 </div>
+                <br/>
+                <p lengthquestion>How long did you want your password?</p>
+                <div class="slidetext">
+                    <input id="sliderbar" type="range" min="8" max="128" value="68">
+                    <div id=length></div>
+                    <br/>
+                    <textarea id="display" placeholder="Your Secure Password"></textarea>
+                </div>
+                <div id="buttons">
+                    <button type="button" id="generator" class="btn btn-dark">Generate</button>
+                    <button type="button" id="copy" class="btn btn-dark">Copy to Clipboard</button>
+                </div>
+            </div>
+            <!-- empty space to create 'white' space on sides -->
             <div class=col-md-2>
             </div>
         </div>
     </div>
-<!--Content END-->
 
-<!-- NO FOOTER CONTENT-->
-
-<!--JS link - Personal File -->
+<!--Link to operation front end Javascript -- must have for functionality -->
 <script src="script.js"></script>
-<!--JS link - Personal File -->
 
 </body>
 
