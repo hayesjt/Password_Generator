@@ -1,5 +1,5 @@
 # Password Generator
----
+
 This password generator allows the user to pick the components they are looking for.
 
 They can select the following:
