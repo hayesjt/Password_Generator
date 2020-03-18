@@ -1,11 +1,9 @@
 
 /* Body CSS */
-
 body {
     background-image: url(assests/images/doodles.png);
 }
 
-/* Content CSS */
 .container {
     background-color: lightgray;
     margin-top: 50px;
@@ -13,7 +11,7 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: .5rem;
-    border: 2px dashed darkgrey;
+    border: 2px solid rgb(52,58,64);
 }
 
 h2 {
@@ -25,10 +23,8 @@ h2 {
     margin: 0 auto;
 }
 
-/* slider content - had help from various sources*/
-
 #sliderbar {
-    -webkit-appearance: none;  /* Override default CSS styles */
+    -webkit-appearance: none;
     appearance: none;
     width: 100%;
     height: 10px; 
@@ -41,12 +37,10 @@ h2 {
     display: inline-block;
 }
 
-/* text box and button content*/
-
 #display {
     width: 100%;
     height: 80px;
-    border: 2px dashed darkgrey;
+    border: 2px solid rgb(52,58,64);
     margin-top: 5px;
 }
 #generate {
