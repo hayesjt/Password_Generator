@@ -10,7 +10,7 @@
     -numbers
     -length between 8-128 (choosen by slider)
 
-    Generate a password at https://haylee430.github.io/Password_Generator/
+Generate a password at [Gernerate Password](https://haylee430.github.io/Password_Generator/)
 
 # Future Add's 
 
