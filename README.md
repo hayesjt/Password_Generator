@@ -33,4 +33,4 @@ Other key components I would like to include:
 
 # Preview GIF
 
-<img src='assets/images/password_gif.gif' />
+<img src='password_gif.gif'/>
