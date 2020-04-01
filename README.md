@@ -27,9 +27,9 @@ Other key components I would like to include:
 
 # Technologies Used
 
--HTML
--CSS
--JavaScript
+    -HTML
+    -CSS
+    -JavaScript
 
 # Preview GIF
 
